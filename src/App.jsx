@@ -1,6 +1,6 @@
 import React from "react";
 import { AiFillInstagram } from "react-icons/ai";
-import { FaTelegramPlane, FaGithub } from "react-icons/fa";
+import { FaTelegramPlane, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import ProfileImage from "/profile.png"
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -25,6 +25,12 @@ const App = () => {
       name: "Github",
       url: "https://github.com/rakarmp",
     },
+    {
+      id: 4,
+      icon: <FaWhatsapp size={25} />,
+      name: "Whatsapp",
+      url: "https://wa.link/lsvfsu"
+    }
   ];
   return (
     <div className="gradient-background flex items-center justify-center flex-col">
@@ -51,7 +57,11 @@ const App = () => {
           /> */}
           <LazyLoadImage src={ProfileImage} alt="Zyarexx" className=" mix-blend-difference w-[100px] rounded-full bg-black "/>
           <h2 className=" text-white text-[1.65rem] font-bold">
-            Zyarexx (Rakarmp)
+            {/* Zyarexx (Rakarmp) <LazyLoadImage src="/verified.png" alt="verified" className="h-6"/> */}
+            <tr>
+              <td>Zyarexx (Rakarmp)</td>
+              <td><LazyLoadImage src="/verified.png" alt="verified" className="h-7 w-7 mx-1"/></td>
+            </tr>
           </h2>
           <div className=" w-[360px] text-center">
             <p className=" text-white text-[1rem] font-medium">
